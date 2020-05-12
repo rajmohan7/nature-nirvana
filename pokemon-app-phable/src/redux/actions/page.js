@@ -10,6 +10,7 @@ function setPokemons(data) {
     let { url } = pokemon
     pokemon.id = url.substring(34, url.length - 1)
     pokemon.name = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)
+    pokemon.url= url
     return pokemon
   })
 

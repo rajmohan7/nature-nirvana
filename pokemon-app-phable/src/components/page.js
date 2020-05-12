@@ -8,10 +8,6 @@ class Page extends Component {
 
   render() {
     let { displayedPokemons, isFetched, error } = this.props
-
-    console.log(displayedPokemons, "displayedPokemons");
-    
-
     let pokemons = displayedPokemons.map(pokemon => {
       return (
         <li className="pokemons__item" key={pokemon.id}>
