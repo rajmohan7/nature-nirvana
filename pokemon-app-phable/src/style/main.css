@@ -34,7 +34,6 @@ body {
 
 .pokemon {
   position: relative;
-  z-index: 20000;
   overflow: hidden;
   background-color: #eee;
   cursor: pointer;
