@@ -42,7 +42,8 @@ class Pokemon extends PureComponent {
               this.getPokemonDetails(pokemon.url)
             }}
           />
-          <p className="pokemon__name">{pokemon.name}</p>
+          <p className="pokemon__name">{pokemon.name}</p>{' '}
+          <span> (Id- {pokemon.id})</span>
         </div>
 
         <PokemonDetail
