@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react'
-import Modal from 'react-awesome-modal'
+import PokemonDetail from './pokemonDetail'
 
 class Pokemon extends PureComponent {
   constructor(props) {
@@ -45,19 +45,15 @@ class Pokemon extends PureComponent {
           <p className="pokemon__name">{pokemon.name}</p>
         </div>
 
-        <Modal
-          visible={this.state.showPokemonDetailModal}
-          width="1000px"
-          height="auto"
-          effect="fadeInDown"
-          onClickAway={() =>
+        <PokemonDetail
+          selectedPokemonData={this.state.selectedPokemonData}
+          showPokemonDetailModal={this.state.showPokemonDetailModal}
+          closeModal={() => {
             this.setState({
               showPokemonDetailModal: !this.state.showPokemonDetailModal
             })
-          }
-        >
-          <div style={{ marginTop: '0px' }}>Hey</div>
-        </Modal>
+          }}
+        />
       </div>
     )
   }

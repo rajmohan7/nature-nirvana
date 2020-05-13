@@ -79,3 +79,9 @@ body {
     height: 160px;
   }
 }
+.borderless td, .borderless th {
+  border: none;
+}
+.table {
+  margin: 0 auto;
+}
